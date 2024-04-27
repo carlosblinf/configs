@@ -7,8 +7,9 @@ local keymap = vim.keymap -- for conciseness
 -- General Keymaps
 ---------------------
 
--- use jk to exit insert mode
+-- use jj to exit insert mode
 keymap.set("i", "jj", "<ESC>")
+keymap.set("i", "<C-c>", "<ESC>")
 
 -- save file
 keymap.set("n", "<C-s>", ":w<CR>")
