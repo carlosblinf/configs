@@ -19,6 +19,10 @@ keymap.set("i", "<C-s>", "<ESC>:w<CR>")
 keymap.set("v", "J", ":m '>+1<CR>gv=gv") -- swap line down
 keymap.set("v", "K", ":m '<-2<CR>gv=gv") -- swap line up
 
+-- move
+keymap.set("n", "<C-d>", "<C-d>zz") -- move down and center
+keymap.set("n", "<C-u>", "<C-u>zz") -- move up and center
+
 -- search & sustitution
 keymap.set("n", "<leader>nh", ":nohl<CR>") -- clear search highlights
 keymap.set("n", "S", ":%s//g<Left><Left>") -- sustitution
