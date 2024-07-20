@@ -15,6 +15,9 @@ keymap.set("i", "<C-c>", "<ESC>")
 keymap.set("n", "<C-s>", ":w<CR>")
 keymap.set("i", "<C-s>", "<ESC>:w<CR>")
 
+-- select all
+keymap.set("n", "<C-a>", "ggVG")
+
 -- swap
 keymap.set("v", "J", ":m '>+1<CR>gv=gv") -- swap line down
 keymap.set("v", "K", ":m '<-2<CR>gv=gv") -- swap line up
