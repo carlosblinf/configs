@@ -83,6 +83,12 @@ return {
 			on_attach = on_attach,
 		})
 
+		-- configure php server with plugin
+		lspconfig["intelephense"].setup({
+			capabilities = capabilities,
+			on_attach = on_attach,
+		})
+
 		-- configure css server
 		lspconfig["cssls"].setup({
 			capabilities = capabilities,
